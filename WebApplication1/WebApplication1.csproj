@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.19" />
+		<PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.3.0-ci" />
+		<PackageReference Include="Microsoft.Extensions.Compliance.Testing" Version="9.3.0-ci" />
+		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.2" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Microsoft.Extensions.AuditReports">
+	    <HintPath>..\..\extensions\artifacts\bin\Microsoft.Extensions.AuditReports\Debug\netstandard2.0\Microsoft.Extensions.AuditReports.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Gen.MetadataExtractor">
+	    <HintPath>..\..\extensions\artifacts\bin\Microsoft.Extensions.AuditReports\Debug\netstandard2.0\Microsoft.Gen.MetadataExtractor.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Gen.Metrics">
+	    <HintPath>..\..\extensions\artifacts\bin\Microsoft.Extensions.AuditReports\Debug\netstandard2.0\Microsoft.Gen.Metrics.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Reports\" />
+	</ItemGroup>
+
+
+
+	<PropertyGroup>
+
+
+		<GenerateComplianceReport>true</GenerateComplianceReport>
+		<ComplianceReportOutputPath>C:\Users\ibrra\source\repos\WebApplication1\WebApplication1\Reports</ComplianceReportOutputPath>
+		
+		<GenerateMetadataReport>true</GenerateMetadataReport>
+		<MetadataReportOutputPath>C:\Users\ibrra\source\repos\WebApplication1\WebApplication1\Reports</MetadataReportOutputPath>
+
+
+
+	</PropertyGroup>
+</Project>
