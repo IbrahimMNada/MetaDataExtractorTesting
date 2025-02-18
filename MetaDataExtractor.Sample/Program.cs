@@ -1,4 +1,4 @@
-
+//.\build.cmd -ci -restore -build -pack 
 
 
 var builder = WebApplication.CreateBuilder(args);

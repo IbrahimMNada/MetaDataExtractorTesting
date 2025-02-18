@@ -10,6 +10,7 @@
 		<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.19" />
 		<PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.3.0-ci" />
 		<PackageReference Include="Microsoft.Extensions.Compliance.Testing" Version="9.3.0-ci" />
+		<PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="9.3.0-ci" />
 		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.2" />
 
 	</ItemGroup>
@@ -25,13 +26,13 @@
 
 
 		<GenerateComplianceReport>false</GenerateComplianceReport>
-		<ComplianceReportOutputPath>C:\Users\ibrra\source\repos\WebApplication1\WebApplication1\Reports</ComplianceReportOutputPath>
+		<ComplianceReportOutputPath>C:\NewReports</ComplianceReportOutputPath>
 		
 		<GenerateMetadataReport>true</GenerateMetadataReport>
-		<MetadataReportOutputPath>C:\Users\ibrra\source\repos\WebApplication1\WebApplication1\Reportsx</MetadataReportOutputPath>
+		<ComplianceReportOutputPath>C:\NewReports</ComplianceReportOutputPath>
 
 		<GenerateMetricsReport>true</GenerateMetricsReport>
-		<MetricsReportOutputPath>C:\Users\ibrra\source\repos\WebApplication1\WebApplication1\Reportsx</MetricsReportOutputPath>
+		<ComplianceReportOutputPath>C:\NewReports</ComplianceReportOutputPath>
 		
 
 

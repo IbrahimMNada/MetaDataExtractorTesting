@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.35806.103
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaDataExtractor.Sample", "WebApplication1\MetaDataExtractor.Sample.csproj", "{31F8C6BE-737E-45EB-A2F8-7813E2F1DDBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaDataExtractor.Sample", "MetaDataExtractor.Sample\MetaDataExtractor.Sample.csproj", "{31F8C6BE-737E-45EB-A2F8-7813E2F1DDBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
