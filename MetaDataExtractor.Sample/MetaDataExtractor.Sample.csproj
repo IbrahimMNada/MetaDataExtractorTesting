@@ -7,17 +7,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Reports\**" />
+	  <Content Remove="Reports\**" />
+	  <EmbeddedResource Remove="Reports\**" />
+	  <None Remove="Reports\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.19" />
 		<PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.3.0-ci" />
 		<PackageReference Include="Microsoft.Extensions.Compliance.Testing" Version="9.3.0-ci" />
 		<PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="9.3.0-ci" />
 		<PackageReference Include="System.Diagnostics.DiagnosticSource" Version="9.0.2" />
 
-	</ItemGroup>
-
-
-	<ItemGroup>
-	  <Folder Include="Reports\" />
 	</ItemGroup>
 
 
