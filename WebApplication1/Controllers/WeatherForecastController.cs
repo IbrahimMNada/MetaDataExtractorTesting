@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Compliance.Testing;
-using System.Diagnostics.Metrics;
-using System.Reflection;
 
 
 namespace WebApplication1.Controllers
@@ -10,9 +7,6 @@ namespace WebApplication1.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private readonly HatCoMetrics _metrics;
-
- 
 
         private static readonly string[] Summaries = new[]
         {
@@ -21,17 +15,15 @@ namespace WebApplication1.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, HatCoMetrics hatCoMetrics)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
-            _metrics = hatCoMetrics;
         }
 
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            _metrics.HatsSold(88);
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
