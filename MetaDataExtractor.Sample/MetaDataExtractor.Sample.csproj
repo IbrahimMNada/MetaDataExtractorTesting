@@ -14,6 +14,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Content Remove="C:\Users\ibrra\.nuget\packages\system.diagnostics.diagnosticsource\9.0.2\contentFiles\any\net9.0\ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.1.19" />
 		<PackageReference Include="Microsoft.Extensions.AuditReports" Version="9.3.0-ci" />
 		<PackageReference Include="Microsoft.Extensions.Compliance.Testing" Version="9.3.0-ci" />
